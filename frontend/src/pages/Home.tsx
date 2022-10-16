@@ -1,13 +1,24 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
-const MainStyle = styled.main`
+const RootStyle = styled.main`
   display: flex;
-  height: 90vh;
 `;
 
 const Home = () => {
-  return <MainStyle></MainStyle>;
+  const navigate = useNavigate();
+  return (
+    <RootStyle>
+      <button
+        onClick={() => {
+          navigate("/todo");
+        }}
+      >
+        button
+      </button>
+    </RootStyle>
+  );
 };
 
 export default Home;
