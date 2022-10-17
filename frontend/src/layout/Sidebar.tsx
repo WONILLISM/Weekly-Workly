@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Snb from "../components/Snb";
 
 const GNB_HEIGHT = 60;
 const SNB_WIDTH = 80;
@@ -13,7 +14,11 @@ const NavStyle = styled.nav`
 `;
 
 const Sidebar = () => {
-  return <NavStyle>Sidebar</NavStyle>;
+  return (
+    <NavStyle>
+      <Snb />
+    </NavStyle>
+  );
 };
 
 export default Sidebar;

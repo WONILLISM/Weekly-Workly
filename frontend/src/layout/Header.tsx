@@ -1,5 +1,6 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import styled from "styled-components";
+import Gnb from "../components/Gnb";
 
 const GNB_HEIGHT = 60;
 
@@ -11,12 +12,12 @@ const StyledHeader = styled.header`
   z-index: 99;
 `;
 
-interface HeaderProps {
-  children: ReactNode;
-}
-
-const Header = (props: HeaderProps) => {
-  return <StyledHeader>{props.children}</StyledHeader>;
+const Header = () => {
+  return (
+    <StyledHeader>
+      <Gnb />
+    </StyledHeader>
+  );
 };
 
 export default Header;
