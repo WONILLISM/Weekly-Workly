@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Gnb from "../components/Gnb";
-
-const GNB_HEIGHT = 60;
+import { GNB_HEIGHT } from "../utils/constant";
 
 const HeaderStyle = styled.header`
   background-color: #999999;

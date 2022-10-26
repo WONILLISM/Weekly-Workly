@@ -1,9 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Snb from "../components/Snb";
-
-const GNB_HEIGHT = 60;
-const SNB_WIDTH = 80;
+import { GNB_HEIGHT, SNB_WIDTH } from "../utils/constant";
 
 const NavStyle = styled.nav`
   background: aqua;
