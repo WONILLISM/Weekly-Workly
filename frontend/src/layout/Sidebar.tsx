@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Snb from "../components/Snb";
 import { GNB_HEIGHT, SNB_WIDTH } from "../utils/constant";
 
-const NavStyle = styled.nav`
+const SidebarStyle = styled.nav`
   background: aqua;
   width: ${SNB_WIDTH}px;
   height: 100%;
@@ -13,9 +13,9 @@ const NavStyle = styled.nav`
 
 const Sidebar = () => {
   return (
-    <NavStyle>
+    <SidebarStyle>
       <Snb />
-    </NavStyle>
+    </SidebarStyle>
   );
 };
 
