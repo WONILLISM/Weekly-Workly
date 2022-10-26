@@ -3,10 +3,10 @@ import styled from "styled-components";
 
 const RootStyle = styled.div`
   height: 100%;
+  padding: 0px 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 40px;
 `;
 
 const WrapperStyle = styled.div`
