@@ -4,7 +4,7 @@ import Snb from "../components/Snb";
 import { GNB_HEIGHT, SNB_WIDTH } from "../utils/constant";
 
 const SidebarStyle = styled.nav`
-  background: aqua;
+  background: #6faf72;
   width: ${SNB_WIDTH}px;
   height: 100%;
   padding-top: ${GNB_HEIGHT}px;

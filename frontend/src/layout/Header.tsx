@@ -4,7 +4,7 @@ import Gnb from "../components/Gnb";
 import { GNB_HEIGHT } from "../utils/constant";
 
 const HeaderStyle = styled.header`
-  background-color: #999999;
+  background-color: #666666;
   width: 100%;
   height: ${GNB_HEIGHT}px;
   position: fixed;
