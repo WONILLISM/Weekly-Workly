@@ -4,7 +4,7 @@ import { GNB_HEIGHT, SNB_WIDTH } from "../utils/constant";
 
 const HomeHeaderStyle = styled.div`
   background-color: #999999;
-  width: 100%;
+  width: 91%;
   height: ${GNB_HEIGHT}px;
   margin-top: ${GNB_HEIGHT}px;
   margin-left: ${SNB_WIDTH}px;
@@ -12,11 +12,7 @@ const HomeHeaderStyle = styled.div`
 `;
 
 const HomeHeader = () => {
-  return (
-    <HomeHeaderStyle>
-      HomeHeader
-    </HomeHeaderStyle>
-  );
+  return <HomeHeaderStyle>HomeHeader</HomeHeaderStyle>;
 };
 
 export default HomeHeader;

@@ -1,22 +1,24 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
+import WorkList from "../components/WorkList";
+import WorkListContainer from "../components/WorkListContainer";
+import WorkSetting from "../components/WorkSetting";
 
 const RootStyle = styled.main`
+  background-color: pink;
+  height: 100%;
+  border: 1px solid black;
   display: flex;
 `;
 
 const Home = () => {
-  const navigate = useNavigate();
   return (
     <RootStyle>
-      <button
-        onClick={() => {
-          navigate("/todo");
-        }}
-      >
-        button
-      </button>
+      <WorkSetting />
+      <WorkListContainer>
+        <WorkList title="a" />
+        <WorkList title="b" />
+      </WorkListContainer>
     </RootStyle>
   );
 };

@@ -7,8 +7,12 @@ import Sidebar from "./Sidebar";
 import HomeHeader from "./HomeHeader";
 
 const RootStyle = styled.div`
-  padding-top: ${GNB_HEIGHT * 2}px;
-  padding-left: ${SNB_WIDTH}px;
+  width: 92%;
+  height: 90%;
+  margin-top: ${GNB_HEIGHT * 2}px;
+  margin-left: ${SNB_WIDTH}px;
+  border: 5px solid black;
+  position: fixed;
 `;
 
 const MainLayout = () => {
