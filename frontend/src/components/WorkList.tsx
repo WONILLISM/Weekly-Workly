@@ -3,8 +3,6 @@ import styled from "styled-components";
 
 const WorkListStyle = styled.div`
   background-color: #aaaaaa;
-  width: 90%;
-  height: 45%;
   margin: 10px;
   border: 1px solid black;
 `;

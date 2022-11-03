@@ -4,27 +4,27 @@ import styled from "styled-components";
 import { GNB_HEIGHT, SNB_WIDTH } from "../utils/constant";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
-import HomeHeader from "./HomeHeader";
 
 const RootStyle = styled.div`
-  width: 92%;
-  height: 90%;
-  margin-top: ${GNB_HEIGHT * 2}px;
+  width: 100%;
+  display: flex;
+`;
+
+const MainStyle = styled.div`
+  width: 100%;
+  margin-top: ${GNB_HEIGHT}px;
   margin-left: ${SNB_WIDTH}px;
-  border: 5px solid black;
-  position: fixed;
 `;
 
 const MainLayout = () => {
   return (
-    <>
+    <RootStyle>
       <Header />
-      <HomeHeader />
       <Sidebar />
-      <RootStyle>
+      <MainStyle>
         <Outlet />
-      </RootStyle>
-    </>
+      </MainStyle>
+    </RootStyle>
   );
 };
 

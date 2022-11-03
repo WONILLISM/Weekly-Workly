@@ -3,10 +3,9 @@ import styled from "styled-components";
 
 const WorkListContainerStyle = styled.div`
   background-color: #aaaaaa;
-  width: 45%;
-  height: 90%;
   margin: 10px;
   border: 1px solid black;
+  flex: 1;
 `;
 
 const WorkListContainer = (props: any) => {
